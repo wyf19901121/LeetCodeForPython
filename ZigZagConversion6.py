@@ -17,7 +17,6 @@ class Solution(object):
                 zs += s[j]
                 if j+2*numRows-2-2*i < len(s):
                     zs += s[j+2*numRows-2-2*i]
-
         for i in range(numRows-1, len(s), 2*numRows-2):
             zs += s[i]
 
