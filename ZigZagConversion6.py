@@ -10,14 +10,11 @@ class Solution(object):
             return s
 
         zs = ""
-        for i in range(0, len(s), 2*numRows-2):
-            zs += s[i]
-        for i in range(1, numRows-1):
+
+        for i in range(0, numRows):
             for j in range(i, len(s), 2*numRows-2):
                 zs += s[j]
-                if j+2*numRows-2-2*i < len(s):
+                if j+2*numRows-2-2*i < len(s) and i % (numRows - 1) != 0:
                     zs += s[j+2*numRows-2-2*i]
-        for i in range(numRows-1, len(s), 2*numRows-2):
-            zs += s[i]
 
         return zs
