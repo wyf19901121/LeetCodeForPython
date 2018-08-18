@@ -11,7 +11,6 @@ class Solution(object):
         s = str.strip()
         if len(s) == 0:
             return 0
-
         signal = 1
         index = 0
         num = 0
