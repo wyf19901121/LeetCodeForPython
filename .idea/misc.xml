@@ -3,13 +3,6 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Python 3.5.2 (~/Anaconda3/anaconda/bin/python)" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings sdk-home="$USER_HOME$/Anaconda3/anaconda/bin/python">
-        <option name="mySdkHome" value="$USER_HOME$/Anaconda3/anaconda/bin/python" />
-      </console-settings>
-    </option>
-  </component>
   <component name="masterDetails">
     <states>
       <state key="GlobalLibrariesConfigurable.UI">
