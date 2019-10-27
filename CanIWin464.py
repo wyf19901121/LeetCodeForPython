@@ -28,8 +28,8 @@ false
 同样地，第一个玩家选择任意其他整数，第二个玩家都会赢。
 """
 
-class Solution(object):
 
+class Solution(object):
 
     def canIWin(self, maxChoosableInteger, desiredTotal):
         """
@@ -39,6 +39,7 @@ class Solution(object):
         """
 
         dp = dict()
+
         def search(status, total):
             """
             search函数
@@ -67,7 +68,3 @@ class Solution(object):
         if (1 + maxChoosableInteger) * maxChoosableInteger / 2 < desiredTotal:
             return False
         return search(0, 0)
-
-
-
-
