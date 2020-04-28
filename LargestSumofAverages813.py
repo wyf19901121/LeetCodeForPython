@@ -31,6 +31,8 @@ class Solution:
         length = len(A)
         dp = [average(i, length) for i in range(length)]
         for k in range(K - 1):
+            #当k为0时，即K=1，不分组，dp[i]即为下标i之后的所有数的平均值
+            # 依次类推，利用动态规划公式
             for i in range(length):
                 for j in range(i + 1, length):
                     dp[i] = max(dp[i], dp[j] + average(i, j))
